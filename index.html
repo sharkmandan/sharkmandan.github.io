@@ -1,8 +1,25 @@
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="build/site.css" />
+		<title>sharkmandan</title>
     </head>
     <body>
-        <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+
+		<script type="text/javascript" src="build/bundle.js" charset="utf-8"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$(window).scroll(function () {
+					if ($(document).scrollTop() <= 50) {
+						$('#header').addClass('navbar-clear');
+					}
+					else {
+						$('#header').removeClass('navbar-clear');
+					}
+				});
+			})
+		</script>
     </body>
 </html>

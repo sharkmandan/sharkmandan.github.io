@@ -1,7 +1,26 @@
 //
 // Typography
 // --------------------------------------------------
-
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Fira', 'Fira Sans';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name}.eot'), '#{$font-path}#{$font-name}.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name}.eot?#iefix'), '#{$font-path}#{$font-name}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name}.woff2'), '#{$font-path}#{$font-name}.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name}.woff'), '#{$font-path}#{$font-name}.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name}.ttf'), '#{$font-path}#{$font-name}.ttf')) format('truetype');
+  }
+  // Import the fonts
+  @font-face {
+    font-family: 'FiraLight';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name-heading}.eot'), '#{$font-path}#{$font-name-heading}.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name-heading}.eot?#iefix'), '#{$font-path}#{$font-name-heading}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name-heading}.woff2'), '#{$font-path}#{$font-name-heading}.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name-heading}.woff'), '#{$font-path}#{$font-name-heading}.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$font-path}#{$font-name-heading}.ttf'), '#{$font-path}#{$font-name-heading}.ttf')) format('truetype');
+  }
+}
 
 // Headings
 // -------------------------

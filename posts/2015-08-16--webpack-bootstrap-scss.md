@@ -7,4 +7,13 @@ npm install -g webpack
 sudo npm install -g webpack
 
 ###SCSS###
-http://bensmithett.com/smarter-css-builds-with-webpack/
+* http://sa.com/smarter-css-builds-with-webpack/
+   * https://github.com/bensmithett/webpack-css-example
+* https://github.com/jtangelder/sass-loader
+* https://github.com/petehunt/webpack-howto
+
+####Dependencies####
+* css-loader
+* extract-text-webpack-plugin
+* sass-loader
+* style-loader
