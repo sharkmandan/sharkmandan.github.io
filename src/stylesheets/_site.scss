@@ -103,6 +103,22 @@ body { background-color: #efefef; }
 
 .center-block>h1 { padding-top:.4em;}
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.center-block {
+		width:90%;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;	
+	}
+	
+	.shark-fin.profile {
+		float:none !important;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
 .baseline-nav {
 	position:absolute;
 	bottom:0;
