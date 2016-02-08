@@ -25177,7 +25177,7 @@
 								null,
 								_react2['default'].createElement(
 									'a',
-									{ href: 'http://00000000-0000-0000-0000-000000000000.com/', target: '_blank' },
+									{ href: '#/projects' },
 									'Projects'
 								)
 							),

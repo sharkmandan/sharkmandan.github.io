@@ -18,7 +18,7 @@ let NavBar = React.createClass({
 								<a href="#/posts">Posts</a>
 							</li>
 							<li>
-								<a href="http://00000000-0000-0000-0000-000000000000.com/" target="_blank">Projects</a>
+								<a href="#/projects">Projects</a>
 							</li>
 							<li>
 								<a href="#/about">About</a>
