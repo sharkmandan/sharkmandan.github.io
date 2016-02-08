@@ -62,7 +62,11 @@
 
 	var _componentsRoutesPostsJsx2 = _interopRequireDefault(_componentsRoutesPostsJsx);
 
-	var _componentsRoutesAboutJsx = __webpack_require__(233);
+	var _componentsRoutesProjectsJsx = __webpack_require__(233);
+
+	var _componentsRoutesProjectsJsx2 = _interopRequireDefault(_componentsRoutesProjectsJsx);
+
+	var _componentsRoutesAboutJsx = __webpack_require__(234);
 
 	var _componentsRoutesAboutJsx2 = _interopRequireDefault(_componentsRoutesAboutJsx);
 
@@ -88,6 +92,7 @@
 			{ name: 'app', path: '/', component: App },
 			_react2['default'].createElement(_reactRouter.IndexRoute, { component: _componentsRoutesHomeJsx2['default'] }),
 			_react2['default'].createElement(_reactRouter.Route, { name: 'posts', path: 'posts', component: _componentsRoutesPostsJsx2['default'] }),
+			_react2['default'].createElement(_reactRouter.Route, { name: 'projects', path: 'projects', component: _componentsRoutesProjectsJsx2['default'] }),
 			_react2['default'].createElement(_reactRouter.Route, { name: 'about', path: 'about', component: _componentsRoutesAboutJsx2['default'] })
 		)
 	), document.body);
@@ -25015,7 +25020,7 @@
 								)
 							)
 						),
-						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Posts', url: '#/posts' }, { text: 'Projects', url: 'http://00000000-0000-0000-0000-000000000000.com/' }, { text: 'About', url: '#/about' }] })
+						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Posts', url: '#/posts' }, { text: 'Projects', url: '#/projects' }, { text: 'About', url: '#/about' }] })
 					),
 					_react2['default'].createElement(
 						_pageBodyJsx2['default'],
@@ -25561,7 +25566,7 @@
 			value: function render() {
 				return _react2['default'].createElement(
 					_pagePageJsx2['default'],
-					{ title: 'posts', coverPhoto: 'posts', blankNav: true },
+					{ title: 'Posts', coverPhoto: 'posts', blankNav: true },
 					_react2['default'].createElement(
 						_pageCoverJsx2['default'],
 						null,
@@ -25592,7 +25597,7 @@
 								)
 							)
 						),
-						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Home', url: '#/' }, { text: 'Projects', url: 'http://00000000-0000-0000-0000-000000000000.com/' }, { text: 'About', url: '#/about' }] })
+						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Home', url: '#/' }, { text: 'Projects', url: '#/projects' }, { text: 'About', url: '#/about' }] })
 					),
 					_react2['default'].createElement(
 						_pageBodyJsx2['default'],
@@ -25682,6 +25687,228 @@
 
 	var _pageBodyJsx2 = _interopRequireDefault(_pageBodyJsx);
 
+	var _blogPostSnippetJsx = __webpack_require__(231);
+
+	var _blogPostSnippetJsx2 = _interopRequireDefault(_blogPostSnippetJsx);
+
+	var Posts = (function (_React$Component) {
+		_inherits(Posts, _React$Component);
+
+		function Posts(props) {
+			_classCallCheck(this, Posts);
+
+			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
+		}
+
+		_createClass(Posts, [{
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement(
+					_pagePageJsx2['default'],
+					{ title: 'Projects', coverPhoto: 'posts', blankNav: true },
+					_react2['default'].createElement(
+						_pageCoverJsx2['default'],
+						null,
+						_react2['default'].createElement(
+							'div',
+							{ className: 'container' },
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-xs-12 jumbotron-content' },
+									_react2['default'].createElement(
+										'div',
+										{ className: 'center-block' },
+										_react2['default'].createElement('div', { className: 'shark-fin profile pull-left' }),
+										_react2['default'].createElement(
+											'h1',
+											null,
+											'Projects'
+										)
+									)
+								)
+							)
+						),
+						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Home', url: '#/' }, { text: 'Posts', url: '#/posts' }, { text: 'About', url: '#/about' }] })
+					),
+					_react2['default'].createElement(
+						_pageBodyJsx2['default'],
+						null,
+						_react2['default'].createElement(
+							'div',
+							{ className: 'projects' },
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-md-12 col-sm-hidden' },
+									_react2['default'].createElement(
+										'h1',
+										null,
+										'Projects'
+									)
+								)
+							),
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-xs-12' },
+									_react2['default'].createElement(
+										'h2',
+										null,
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://00000000-0000-0000-0000-000000000000.com', target: '_blank' },
+											'00000000-0000-0000-0000-000000000000'
+										)
+									)
+								)
+							),
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-md-3 col-sm-4' },
+									'[[Photo]]'
+								),
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-md-9 col-sm-8' },
+									_react2['default'].createElement(
+										'h3',
+										{ className: 'top' },
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://www.guidempty.com', target: '_blank' },
+											'guidempty.com'
+										)
+									),
+									_react2['default'].createElement(
+										'p',
+										null,
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://00000000-0000-0000-0000-000000000000.com/', target: '_blank' },
+											'00000000-0000-0000-0000-000000000000.com'
+										),
+										', also known as ',
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://www.guidempty.com', target: '_blank' },
+											'guidempty.com'
+										),
+										' (but that domain name isn\'t as cool), started out of the need to get an empty uniqueidentifier in SQL. It\'s fairly simple in C#, but back in the days before ',
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://dotnetfiddle.net', target: '_blank' },
+											'dotnetfiddle'
+										),
+										', it was kind of a pain if you didn\'t know where else in the database you could pull one. Once the site was up I added other text-based database tools to the site. Turn a list of items into a comma-separated quoted list (for a SQL in query), or convert a tab-delimited list (such as a spreadsheet) into a list of insert statements. These tools do all the computation entirely in your browser, so the data never hits a server. The input and output designed to allow data to be easily copy and pasted to/from remote desktop sessions.'
+									)
+								)
+							),
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-xs-12' },
+									_react2['default'].createElement(
+										'h2',
+										null,
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://mylist.christmas', target: '_blank' },
+											'Christmas List'
+										)
+									)
+								)
+							),
+							_react2['default'].createElement(
+								'div',
+								{ className: 'row' },
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-md-3 col-sm-4' },
+									'[MYLIST.CHRISTMAS]'
+								),
+								_react2['default'].createElement(
+									'div',
+									{ className: 'col-md-9 col-sm-8' },
+									_react2['default'].createElement(
+										'h3',
+										{ className: 'top' },
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://mylist.christmas', target: '_blank' },
+											'mylist.christmas'
+										)
+									),
+									_react2['default'].createElement(
+										'p',
+										null,
+										'...'
+									)
+								)
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Posts;
+	})(_react2['default'].Component);
+
+	exports['default'] = Posts;
+	module.exports = exports['default'];
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _pagePageJsx = __webpack_require__(207);
+
+	var _pagePageJsx2 = _interopRequireDefault(_pagePageJsx);
+
+	var _pageCoverJsx = __webpack_require__(228);
+
+	var _pageCoverJsx2 = _interopRequireDefault(_pageCoverJsx);
+
+	var _pageBaselineNavJsx = __webpack_require__(229);
+
+	var _pageBaselineNavJsx2 = _interopRequireDefault(_pageBaselineNavJsx);
+
+	var _pageBodyJsx = __webpack_require__(230);
+
+	var _pageBodyJsx2 = _interopRequireDefault(_pageBodyJsx);
+
 	var About = (function (_React$Component) {
 		_inherits(About, _React$Component);
 
@@ -25727,7 +25954,7 @@
 								)
 							)
 						),
-						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Home', url: '#/' }, { text: 'Posts', url: '#/posts' }, { text: 'Projects', url: 'http://00000000-0000-0000-0000-000000000000.com/' }] })
+						_react2['default'].createElement(_pageBaselineNavJsx2['default'], { nav: [{ text: 'Home', url: '#/' }, { text: 'Posts', url: '#/posts' }, { text: 'Projects', url: '#/projects' }] })
 					),
 					_react2['default'].createElement(
 						_pageBodyJsx2['default'],

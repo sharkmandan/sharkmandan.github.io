@@ -23,7 +23,7 @@ class About extends React.Component {
 						</div>
 					</div>
 					
-					<BaselineNav nav={[{text: 'Home', url:'#/'}, {text: 'Posts', url:'#/posts'}, {text: 'Projects', url:'http://00000000-0000-0000-0000-000000000000.com/'}]} />
+					<BaselineNav nav={[{text: 'Home', url:'#/'}, {text: 'Posts', url:'#/posts'}, {text: 'Projects', url:'#/projects'}]} />
 				</Cover>
 				<Body>
 					<div className='about'>

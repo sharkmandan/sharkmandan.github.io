@@ -5775,6 +5775,9 @@ body {
           filter: none;
   z-index: 1; }
 
+h3.top {
+  margin-top: 0; }
+
 .navbar-brand {
   font-family: "FiraLight"; }
 

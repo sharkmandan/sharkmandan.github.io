@@ -24,7 +24,7 @@ export class Home extends React.Component {
 							</div>
 						</div>
 					</div>
-					<BaselineNav nav={[{text: 'Posts', url:'#/posts'}, {text: 'Projects', url:'http://00000000-0000-0000-0000-000000000000.com/'}, {text: 'About', url:'#/about'}]} />
+					<BaselineNav nav={[{text: 'Posts', url:'#/posts'}, {text: 'Projects', url:'#/projects'}, {text: 'About', url:'#/about'}]} />
 				</Cover>
 				
 				<Body>

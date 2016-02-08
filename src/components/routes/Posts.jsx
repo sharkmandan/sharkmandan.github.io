@@ -10,7 +10,7 @@ class Posts extends React.Component {
 		super(props);
 	}
 	render() {
-		return (<Page title='posts' coverPhoto='posts' blankNav={true}>
+		return (<Page title='Posts' coverPhoto='posts' blankNav={true}>
 				<Cover>
 					<div className='container'>
 						<div className='row'>
@@ -24,7 +24,7 @@ class Posts extends React.Component {
 						</div>
 					</div>
 					
-					<BaselineNav nav={[{text: 'Home', url:'#/'}, {text: 'Projects', url:'http://00000000-0000-0000-0000-000000000000.com/'}, {text: 'About', url:'#/about'}]} />
+					<BaselineNav nav={[{text: 'Home', url:'#/'}, {text: 'Projects', url:'#/projects'}, {text: 'About', url:'#/about'}]} />
 				</Cover>
 				<Body>
 					<div className='posts'>
