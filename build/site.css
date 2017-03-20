@@ -5775,6 +5775,10 @@ body {
           filter: none;
   z-index: 1; }
 
+h2 a:hover, h3 a:hover {
+  text-decoration: none;
+  font-weight: bold; }
+
 h3.top {
   margin-top: 0; }
 
@@ -5813,6 +5817,10 @@ h3.top {
 .blur {
   -webkit-filter: blur(10px);
           filter: blur(10px); }
+
+.thumb {
+  height: 150px;
+  width: 200px; }
 
 .navbar-inverse {
   background-color: rgba(51, 51, 51, 0.95);

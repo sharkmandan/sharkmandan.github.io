@@ -39,7 +39,9 @@ class Posts extends React.Component {
 						</div>
 						<div className='row'>
 							<div className='col-md-3 col-sm-4'>
-								[[Photo]]
+								<a href="http://00000000-0000-0000-0000-000000000000.com/" target="_blank">
+									<img src="build/img/projects/guidempty.png" alt="http://00000000-0000-0000-0000-000000000000.com" className="thumb thumbnail img-rounded" />
+								</a>
 							</div>
 							<div className='col-md-9 col-sm-8'>
 								<h3 className="top"><a href="http://www.guidempty.com" target="_blank">guidempty.com</a></h3>
@@ -57,16 +59,22 @@ class Posts extends React.Component {
 						</div>
 						<div className='row'>
 							<div className='col-xs-12'>
-								<h2><a href="http://mylist.christmas" target="_blank">Christmas List</a></h2>
+								<h2><a href="http://mylist.christmas" target="_blank">MyList.Christmas</a></h2>
 							</div>
 						</div>
 						<div className='row'>
 							<div className='col-md-3 col-sm-4'>
-								[MYLIST.CHRISTMAS]
+								<a href="http://mylist.christmas/" target="_blank">
+									<img src="build/img/projects/mylist-christmas.png" alt="http://mylist.christmas / http://whatiwantforchristmas.net" className="thumb thumbnail img-rounded" />
+								</a>
 							</div>
 							<div className='col-md-9 col-sm-8'>
-								<h3 className="top"><a href="http://mylist.christmas" target="_blank">mylist.christmas</a></h3>
-								<p>...</p>
+								<h3 className="top"><a href="http://mylist.christmas" target="_blank">mylist.christmas</a> / <a href="http://www.whatiwantforchristmas.net" target="_blank">whatiwantforchristmas.net</a></h3>
+								<p><a href="http://mylist.christmas" target="_blank">mylist.christmas</a>, formerly known as 
+								<a href="http://www.whatiwantforchristmas.net" target="_blank">whatiwantforchristmas.net</a>. Create a Christmas or birthday
+								list and easily share it with anybody anywhere. Icnlude your items, group by category, with multiple links to buy. Your wishlist
+								has never been more clear. Simply sign in with your Google account to start your list. Adding an item automatically searches Amazon, 
+								you can manually add as many links as needed.</p>
 							</div>
 						</div>
 					</div>

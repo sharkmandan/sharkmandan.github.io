@@ -25775,7 +25775,11 @@
 								_react2['default'].createElement(
 									'div',
 									{ className: 'col-md-3 col-sm-4' },
-									'[[Photo]]'
+									_react2['default'].createElement(
+										'a',
+										{ href: 'http://00000000-0000-0000-0000-000000000000.com/', target: '_blank' },
+										_react2['default'].createElement('img', { src: 'build/img/projects/guidempty.png', alt: 'http://00000000-0000-0000-0000-000000000000.com', className: 'thumb thumbnail img-rounded' })
+									)
 								),
 								_react2['default'].createElement(
 									'div',
@@ -25825,7 +25829,7 @@
 										_react2['default'].createElement(
 											'a',
 											{ href: 'http://mylist.christmas', target: '_blank' },
-											'Christmas List'
+											'MyList.Christmas'
 										)
 									)
 								)
@@ -25836,7 +25840,11 @@
 								_react2['default'].createElement(
 									'div',
 									{ className: 'col-md-3 col-sm-4' },
-									'[MYLIST.CHRISTMAS]'
+									_react2['default'].createElement(
+										'a',
+										{ href: 'http://mylist.christmas/', target: '_blank' },
+										_react2['default'].createElement('img', { src: 'build/img/projects/mylist-christmas.png', alt: 'http://mylist.christmas / http://whatiwantforchristmas.net', className: 'thumb thumbnail img-rounded' })
+									)
 								),
 								_react2['default'].createElement(
 									'div',
@@ -25848,12 +25856,29 @@
 											'a',
 											{ href: 'http://mylist.christmas', target: '_blank' },
 											'mylist.christmas'
+										),
+										' / ',
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://www.whatiwantforchristmas.net', target: '_blank' },
+											'whatiwantforchristmas.net'
 										)
 									),
 									_react2['default'].createElement(
 										'p',
 										null,
-										'...'
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://mylist.christmas', target: '_blank' },
+											'mylist.christmas'
+										),
+										', formerly known as',
+										_react2['default'].createElement(
+											'a',
+											{ href: 'http://www.whatiwantforchristmas.net', target: '_blank' },
+											'whatiwantforchristmas.net'
+										),
+										'. Create a Christmas or birthday list and easily share it with anybody anywhere. Icnlude your items, group by category, with multiple links to buy. Your wishlist has never been more clear. Simply sign in with your Google account to start your list. Adding an item automatically searches Amazon, you can manually add as many links as needed.'
 									)
 								)
 							)
