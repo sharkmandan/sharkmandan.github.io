@@ -25561,7 +25561,7 @@
 			fetch('posts/map.json').then(function (response) {
 				return response.json();
 			}).then(function (obj) {
-				console.log('OBJ-', obj);
+				this.setState({ posts: obj.posts });
 			});
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 		}
@@ -25569,6 +25569,25 @@
 		_createClass(Posts, [{
 			key: 'render',
 			value: function render() {
+				var posts = null;
+				if (!this.state.posts || this.state.posts.length === 0) {
+					posts = _react2['default'].createElement(
+						'div',
+						null,
+						'loading...'
+					);
+				} else {
+					posts = [];
+					for (var i = 0; i < this.state.posts.length; i++) {
+						var item = this.state.posts[i];
+						var out = _react2['default'].createElement(
+							_blogPostSnippetJsx2['default'],
+							{ title: item.title, formattedDate: item.date, tags: item.tags, id: item.slug },
+							item.title
+						);
+						posts.push(out);
+					}
+				}
 				return _react2['default'].createElement(
 					_pagePageJsx2['default'],
 					{ title: 'Posts', coverPhoto: 'posts', blankNav: true },
@@ -25621,6 +25640,7 @@
 										null,
 										'Posts'
 									),
+									posts,
 									_react2['default'].createElement(
 										_blogPostSnippetJsx2['default'],
 										{ title: 'Welcome!', formattedDate: '2016 Jan 20', tags: ['General'], id: '2016-01-20--welcome' },

@@ -10,11 +10,23 @@ class Posts extends React.Component {
 		fetch('posts/map.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
-			console.log('OBJ-', obj);
+			this.setState({posts:obj.posts});
 		});
 		super(props);
 	}
 	render() {
+		var posts = null;
+		if(!this.state.posts || this.state.posts.length === 0) {
+			posts = <div>loading...</div>
+		}
+		else {
+			posts = [];
+			for(var i = 0; i < this.state.posts.length; i++) {
+				var item = this.state.posts[i];
+				var out = (<PostSnippet title={item.title} formattedDate={item.date} tags={item.tags} id={item.slug}>{item.title}</PostSnippet>);
+				posts.push(out);
+			}
+		}
 		return (<Page title='Posts' coverPhoto='posts' blankNav={true}>
 				<Cover>
 					<div className='container'>
@@ -36,6 +48,7 @@ class Posts extends React.Component {
 						<div className='row'>
 							<div className='col-md-6 col-xs-12'>
 								<h1>Posts</h1>
+								{posts}
 								<PostSnippet title='Welcome!' formattedDate='2016 Jan 20' tags={['General']} id='2016-01-20--welcome'>
 									Welcome to the new and improved sharkmandan.com! 
 									Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, 
