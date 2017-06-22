@@ -2,19 +2,19 @@
 	"posts":[
 		{
 			"title": "Donut Power Rankings: The Best Donuts in the World",
-			"date": "2017-06-21",
+			"date": "2017 Jun 21",
 			"slug": "rankings-donut",
 			"tags": "food,donuts,ranking",
 			"image": null,
 			"description": "This is my on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai"
 		},
 		{
-			"title": "BBQ Power Rankings: The Best Barbecue",
-			"date": "2017-06-25",
-			"slug": "rankings-bbq",
-			"tags": "food,bbq,ranking",
+			"title": "Welcome!",
+			"date": "2016 Jan 20",
+			"slug": "2016-01-20--welcome",
+			"tags": "general",
 			"image": null,
-			"description": "As a certified KCBS BBQ judge, this is my on-going list of the best bbq I've had."
+			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!)."
 		}
 	]
 }
