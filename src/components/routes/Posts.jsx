@@ -15,11 +15,8 @@ class Posts extends React.Component {
 		super(props);
 	}
 	render() {
-		var posts = null;
-		if(!this.state.posts || this.state.posts.length === 0) {
-			posts = <div>loading...</div>
-		}
-		else {
+		var posts = <div>loading...</div>;
+		if(this.state.posts && this.state.posts.length !== 0) {
 			posts = [];
 			for(var i = 0; i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];

@@ -25569,14 +25569,12 @@
 		_createClass(Posts, [{
 			key: 'render',
 			value: function render() {
-				var posts = null;
-				if (!this.state.posts || this.state.posts.length === 0) {
-					posts = _react2['default'].createElement(
-						'div',
-						null,
-						'loading...'
-					);
-				} else {
+				var posts = _react2['default'].createElement(
+					'div',
+					null,
+					'loading...'
+				);
+				if (this.state.posts && this.state.posts.length !== 0) {
 					posts = [];
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
