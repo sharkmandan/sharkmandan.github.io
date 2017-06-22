@@ -25639,12 +25639,7 @@
 										null,
 										'Posts'
 									),
-									posts,
-									_react2['default'].createElement(
-										_blogPostSnippetJsx2['default'],
-										{ title: 'Welcome!', formattedDate: '2016 Jan 20', tags: ['General'], id: '2016-01-20--welcome' },
-										'Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).'
-									)
+									posts
 								),
 								_react2['default'].createElement(
 									'div',

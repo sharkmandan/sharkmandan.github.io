@@ -47,11 +47,6 @@ class Posts extends React.Component {
 							<div className='col-md-6 col-xs-12'>
 								<h1>Posts</h1>
 								{posts}
-								<PostSnippet title='Welcome!' formattedDate='2016 Jan 20' tags={['General']} id='2016-01-20--welcome'>
-									Welcome to the new and improved sharkmandan.com! 
-									Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, 
-									or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).
-								</PostSnippet>
 							</div>
 							<div className='col-md-5 col-md-offset-1 col-xs-12'>
 								<br /><br />
