@@ -25561,7 +25561,7 @@
 			fetch('posts/map.json').then(function (response) {
 				return response.json();
 			}).then(function (obj) {
-				console.log(obj);
+				console.log('OBJ-', obj);
 			});
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 		}

@@ -10,7 +10,7 @@ class Posts extends React.Component {
 		fetch('posts/map.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
-			console.log(obj);
+			console.log('OBJ-', obj);
 		});
 		super(props);
 	}
