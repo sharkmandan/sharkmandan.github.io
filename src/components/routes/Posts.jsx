@@ -7,6 +7,10 @@ import PostSnippet from '../blog/PostSnippet.jsx';
 
 class Posts extends React.Component {
 	constructor(props) {
+		fetch('posts/map.json').then(function(data) {
+			console.log(arguments);
+			console.log('DATA!', data);
+		});
 		super(props);
 	}
 	render() {
