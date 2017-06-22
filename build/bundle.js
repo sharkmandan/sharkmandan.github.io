@@ -25575,7 +25575,7 @@
 					null,
 					'loading...'
 				);
-				if (this.state.posts && this.state.posts.length !== 0) {
+				if (this.state && this.state.posts && this.state.posts.length !== 0) {
 					posts = [];
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
