@@ -25558,12 +25558,13 @@
 		function Posts(props) {
 			_classCallCheck(this, Posts);
 
+			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
+			var self = this;
 			fetch('posts/map.json').then(function (response) {
 				return response.json();
 			}).then(function (obj) {
-				this.setState({ posts: obj.posts });
+				self.setState({ posts: obj.posts });
 			});
-			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 		}
 
 		_createClass(Posts, [{
@@ -25581,7 +25582,7 @@
 						var out = _react2['default'].createElement(
 							_blogPostSnippetJsx2['default'],
 							{ title: item.title, formattedDate: item.date, tags: item.tags, id: item.slug },
-							item.title
+							item.description
 						);
 						posts.push(out);
 					}

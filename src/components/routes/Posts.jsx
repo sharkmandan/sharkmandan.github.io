@@ -7,12 +7,13 @@ import PostSnippet from '../blog/PostSnippet.jsx';
 
 class Posts extends React.Component {
 	constructor(props) {
+		super(props);
+		var self = this;
 		fetch('posts/map.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
-			this.setState({posts:obj.posts});
+			self.setState({posts:obj.posts});
 		});
-		super(props);
 	}
 	render() {
 		var posts = <div>loading...</div>;
@@ -20,7 +21,7 @@ class Posts extends React.Component {
 			posts = [];
 			for(var i = 0; i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];
-				var out = (<PostSnippet title={item.title} formattedDate={item.date} tags={item.tags} id={item.slug}>{item.title}</PostSnippet>);
+				var out = (<PostSnippet title={item.title} formattedDate={item.date} tags={item.tags} id={item.slug}>{item.description}</PostSnippet>);
 				posts.push(out);
 			}
 		}
