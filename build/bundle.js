@@ -25558,6 +25558,10 @@
 		function Posts(props) {
 			_classCallCheck(this, Posts);
 
+			fetch('posts/map.json').then(function (data) {
+				console.log(arguments);
+				console.log('DATA!', data);
+			});
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 		}
 
