@@ -25559,7 +25559,9 @@
 			_classCallCheck(this, Posts);
 
 			fetch('posts/map.json').then(function (response) {
-				console.log('DATA!', response.json());
+				return response.json();
+			}).then(function (obj) {
+				console.log(obj);
 			});
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 		}
