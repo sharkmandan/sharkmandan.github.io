@@ -25582,7 +25582,7 @@
 				var posts = _react2['default'].createElement(
 					'div',
 					null,
-					'loading?'
+					'loading...'
 				);
 				if (this.state && this.state.posts && this.state.posts.length !== 0) {
 					posts = [];
