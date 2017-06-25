@@ -5931,4 +5931,5 @@ h3.top {
 .post-snippet-bg {
   background-position: left center;
   height: 120px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
