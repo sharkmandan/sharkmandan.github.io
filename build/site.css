@@ -5929,6 +5929,5 @@ h3.top {
   border: solid 1px #fff; }
 
 .post-snippet-bg {
-  background-color: #999;
-  background-position: center center;
-  height: 100px; }
+  background-position: left center;
+  height: 120px; }
