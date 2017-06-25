@@ -25469,7 +25469,16 @@
 				var textClass = "col-xs-12";
 				var img = null;
 				if (this.props.image) {
-					img = _react2['default'].createElement('img', { src: this.props.image, className: 'post-thumb' });
+					var path = this.props.image;
+					img = _react2['default'].createElement(
+						'div',
+						{ className: 'row' },
+						_react2['default'].createElement(
+							'div',
+							{ className: 'col-xs-12' },
+							_react2['default'].createElement('div', { className: 'post-bg', style: { backgroundImage: path } })
+						)
+					);
 					textClass = "col-xs-8";
 				}
 				console.log(img);

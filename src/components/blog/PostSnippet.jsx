@@ -17,7 +17,13 @@ class PostSnippet extends React.Component {
 		var textClass = "col-xs-12";
 		var img = null;
 		if(this.props.image) {
-			img = <img src={this.props.image} className="post-thumb" />
+			var path = this.props.image;
+			img = (<div className='row'>
+					<div className='col-xs-12'>
+						<div className='post-bg' style={{backgroundImage:path}}></div>
+					</div>
+					</div>
+				);
 			textClass = "col-xs-8";
 		}
 		console.log(img);
