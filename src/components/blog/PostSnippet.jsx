@@ -19,7 +19,7 @@ class PostSnippet extends React.Component {
 			var path = this.props.image;
 			img = (<div className='row'>
 					<div className='col-xs-12'>
-						<div className='post-snippet-bg' style={{backgroundImage:url("'" + path + "'")}}></div>
+						<div className='post-snippet-bg' style={{backgroundImage:"url('" + path + "')"}}></div>
 					</div>
 					</div>
 				);

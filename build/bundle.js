@@ -25475,7 +25475,7 @@
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
-							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: url("'" + path + "'") } })
+							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: "url('" + path + "')" } })
 						)
 					);
 				}
