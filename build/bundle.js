@@ -25560,7 +25560,9 @@
 
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 			var self = this;
+			console.log('fetching...');
 			fetch('feed.json').then(function (response) {
+				console.log('HERE!');
 				console.log(response);
 				return response.json();
 			}).then(function (obj) {

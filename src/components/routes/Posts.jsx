@@ -9,7 +9,9 @@ class Posts extends React.Component {
 	constructor(props) {
 		super(props);
 		var self = this;
+		console.log('fetching...');
 		fetch('feed.json').then(function(response) {
+			console.log('HERE!');
 			console.log(response);
 			return response.json();
 		}).then(function(obj) {
