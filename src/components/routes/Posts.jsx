@@ -12,7 +12,7 @@ class Posts extends React.Component {
 		fetch('feed.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
-			self.setState({posts:obj.posts});
+			self.setState({posts:obj.items});
 		});
 	}
 	render() {
