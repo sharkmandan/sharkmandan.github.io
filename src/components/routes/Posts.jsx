@@ -9,7 +9,7 @@ class Posts extends React.Component {
 	constructor(props) {
 		super(props);
 		var self = this;
-		fetch('posts/map.json').then(function(response) {
+		fetch('feed.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
 			self.setState({posts:obj.posts});
@@ -21,7 +21,8 @@ class Posts extends React.Component {
 			posts = [];
 			for(var i = 0; i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];
-				var out = (<PostSnippet title={item.title} formattedDate={item.date} tags={item.tags} id={item.slug}>{item.description}</PostSnippet>);
+				var dt = item.date.substr(0, item.date.indexOf('T'));
+				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.slug}>{item.description}</PostSnippet>);
 				posts.push(out);
 			}
 		}

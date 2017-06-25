@@ -1,0 +1,27 @@
+{
+	"version": "https://jsonfeed.org/version/1",
+	"title": "sharkmandan's Posts",
+	"home_page_url": "https://sharkmandan.com/",
+	"feed_url": "https://sharkmandan.com/feed.json",
+	"items":[
+		{
+			"id": "rankings-donut",
+			"url": "https://sharkmandan.com/#posts/rankings-donut",
+			"title": "Donut Power Rankings: The Best Donuts in the World",
+			"date": "2017-06-21T22:17:00-08:00",
+			"tags": "food,donuts,ranking",
+			"image": null,
+			"content_text": "This is my on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai",
+			"description": "An on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai"
+		},
+		{
+			"id": "2016-01-20--welcome",
+			"url": "https://sharkmandan.com/#posts/2016-01-20--welcome",
+			"title": "Welcome!",
+			"date": "2016-01-20T14:22:00-09:00",
+			"tags": "general",
+			"image": null,
+			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!)."
+		}
+	]
+}
