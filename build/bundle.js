@@ -25423,21 +25423,21 @@
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _react = __webpack_require__(1);
 
@@ -25449,50 +25449,57 @@
 		function PostSnippet(props) {
 			_classCallCheck(this, PostSnippet);
 
-			_get(Object.getPrototypeOf(PostSnippet.prototype), 'constructor', this).call(this, props);
+			_get(Object.getPrototypeOf(PostSnippet.prototype), "constructor", this).call(this, props);
 		}
 
 		_createClass(PostSnippet, [{
-			key: 'render',
+			key: "render",
 			value: function render() {
-				console.log(this.props.children);
 				var body = null;
 
 				var i = 0;
-				_react2['default'].Children.forEach(this.props.children, function (child) {
+				_react2["default"].Children.forEach(this.props.children, function (child) {
 					if (i === 0) {
 						body = child;
 					}
 					i++;
 				});
 
-				return _react2['default'].createElement(
-					'div',
-					{ className: 'post-snippet' },
-					_react2['default'].createElement(
-						'div',
-						{ className: 'row' },
-						_react2['default'].createElement(
-							'div',
-							{ className: 'col-xs-12' },
-							_react2['default'].createElement(
-								'h2',
+				var textClass = "col-xs-12";
+				var img = null;
+				if (this.props.image) {
+					img = _react2["default"].createElement("img", { src: this.props.image, className: "post-thumb", style: { float: left } });
+					textClass = "col-xs-8";
+				}
+
+				return _react2["default"].createElement(
+					"div",
+					{ className: "post-snippet" },
+					img,
+					_react2["default"].createElement(
+						"div",
+						{ className: "row" },
+						_react2["default"].createElement(
+							"div",
+							{ className: "col-xs-12" },
+							_react2["default"].createElement(
+								"h2",
 								null,
 								this.props.title
 							),
-							_react2['default'].createElement(
-								'h4',
+							_react2["default"].createElement(
+								"h4",
 								null,
 								this.props.formattedDate
 							)
 						)
 					),
-					_react2['default'].createElement(
-						'div',
-						{ className: 'row' },
-						_react2['default'].createElement(
-							'div',
-							{ className: 'col-xs-12' },
+					_react2["default"].createElement(
+						"div",
+						{ className: "row" },
+						_react2["default"].createElement(
+							"div",
+							{ className: "col-xs-12" },
 							body
 						)
 					)
@@ -25503,10 +25510,10 @@
 		}]);
 
 		return PostSnippet;
-	})(_react2['default'].Component);
+	})(_react2["default"].Component);
 
-	exports['default'] = PostSnippet;
-	module.exports = exports['default'];
+	exports["default"] = PostSnippet;
+	module.exports = exports["default"];
 
 /***/ },
 /* 232 */
@@ -25560,14 +25567,9 @@
 
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 			var self = this;
-			console.log('fetching...');
 			fetch('feed.json').then(function (response) {
-				console.log('HERE!');
-				console.log(response);
 				return response.json();
 			}).then(function (obj) {
-				console.log(obj);
-				console.log(obj.items);
 				self.setState({ posts: obj.items });
 			});
 		}
@@ -25588,7 +25590,7 @@
 						console.log(dt);
 						var out = _react2['default'].createElement(
 							_blogPostSnippetJsx2['default'],
-							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id },
+							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.image },
 							item.description
 						);
 						posts.push(out);

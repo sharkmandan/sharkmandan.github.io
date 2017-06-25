@@ -5,7 +5,6 @@ class PostSnippet extends React.Component {
 		super(props);
 	}
 	render() {
-		console.log(this.props.children);
 		let body = null;
 		
 		var i = 0;
@@ -13,9 +12,17 @@ class PostSnippet extends React.Component {
 			if(i === 0) { body = child; } 
 			i++;
 		});
+
+		var textClass = "col-xs-12";
+		var img = null;
+		if(this.props.image) {
+			img = <img src={this.props.image} className="post-thumb" style={{float: left}} />
+			textClass = "col-xs-8";
+		}
 		
 		return (
 			<div className='post-snippet'>
+				{img}
 				<div className='row'>
 					<div className='col-xs-12'>
 						<h2>{this.props.title}</h2>
