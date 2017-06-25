@@ -25455,39 +25455,47 @@
 		_createClass(PostSnippet, [{
 			key: 'render',
 			value: function render() {
-				var body = null;
+				var body = this.props.body;
+				var html = { __html: body };
+				var content = _react2['default'].createElement(
+					'p',
+					null,
+					body,
+					' ',
+					_react2['default'].createElement(
+						'span',
+						{ className: 'link' },
+						'Read Post »'
+					)
+				);
 
-				var i = 0;
-				_react2['default'].Children.forEach(this.props.children, function (child) {
-					if (i === 0) {
-						body = child;
-					}
-					i++;
-				});
-
-				console.log('...');
 				var img = null;
 				if (this.props.image) {
 					var path = this.props.image;
 					img = _react2['default'].createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'row banner' },
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
-							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: "url('" + path + "')" } })
+							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: 'url(\'' + path + '\')' } })
 						)
 					);
 				}
-				console.log(img);
+				var tags = '';
+				if (this.props.tags && this.props.tags.split) {
+					var tagArr = this.props.tags.split(',');
+					tags = tagArr.join(', ');
+				}
+
+				console.log(body);
 
 				return _react2['default'].createElement(
-					'div',
-					{ className: 'post-snippet' },
-					img,
+					'a',
+					{ href: '#/posts/' + this.props.id, className: 'post-snippet' },
 					_react2['default'].createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'row post-snippet-title' },
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
@@ -25495,26 +25503,44 @@
 								'h2',
 								null,
 								this.props.title
-							),
+							)
+						)
+					),
+					img,
+					_react2['default'].createElement(
+						'div',
+						{ className: 'row post-snippet-subtitle' },
+						_react2['default'].createElement(
+							'div',
+							{ className: 'col-xs-4' },
 							_react2['default'].createElement(
 								'h4',
 								null,
 								this.props.formattedDate
 							)
+						),
+						_react2['default'].createElement(
+							'div',
+							{ className: 'col-xs-offset-4 col-xs-4 tags' },
+							_react2['default'].createElement(
+								'h4',
+								null,
+								_react2['default'].createElement('span', { className: 'glyphicon glyphicon-tags' }),
+								' ',
+								tags
+							)
 						)
 					),
 					_react2['default'].createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'row post-snippet-body' },
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
-							body
+							content
 						)
 					)
 				);
-
-				// <a href={`#/posts/${this.props.id}`}>Read Post &raquo;</a>
 			}
 		}]);
 
@@ -25596,15 +25622,11 @@
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
 						var dt = item.date.substr(0, item.date.indexOf('T'));
-						console.log(dt);
-						var out = _react2['default'].createElement(
-							_blogPostSnippetJsx2['default'],
-							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image },
-							item.description
-						);
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html });
 						posts.push(out);
 					}
 				}
+
 				return _react2['default'].createElement(
 					_pagePageJsx2['default'],
 					{ title: 'Posts', coverPhoto: 'posts', blankNav: true },
@@ -25628,11 +25650,6 @@
 											'h1',
 											null,
 											'Blog Posts'
-										),
-										_react2['default'].createElement(
-											'h4',
-											null,
-											'Welcome!'
 										)
 									)
 								)
@@ -25651,25 +25668,13 @@
 								{ className: 'row' },
 								_react2['default'].createElement(
 									'div',
-									{ className: 'col-md-6 col-xs-12' },
+									{ className: 'col-md-8 col-xs-12 col-md-offset-2' },
 									_react2['default'].createElement(
 										'h1',
 										null,
 										'Posts'
 									),
 									posts
-								),
-								_react2['default'].createElement(
-									'div',
-									{ className: 'col-md-5 col-md-offset-1 col-xs-12' },
-									_react2['default'].createElement('br', null),
-									_react2['default'].createElement('br', null),
-									_react2['default'].createElement('script', { async: true, src: 'https://static.medium.com/embed.js' }),
-									_react2['default'].createElement(
-										'a',
-										{ className: 'm-profile', href: 'https://medium.com/@sharkmandan' },
-										'sharkmandan on Medium'
-									)
 								)
 							)
 						)

@@ -10,10 +10,10 @@
 			"title": "Donut Power Rankings: The Best Donuts in the World",
 			"date": "2017-06-21T22:17:00-08:00",
 			"tags": "food,donuts,ranking",
-			"image": "https://sharkmandan.com/src/images/posts/rankings-donut/maple-bacon.jpg",
-			"banner_image": "https://sharkmandan.com/src/images/posts/rankings-donut/preview.jpg",
-			"content_text": "This is my on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai",
-			"description": "An on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai"
+			"image": "/src/images/posts/rankings-donut/maple-bacon.jpg",
+			"banner_image": "/src/images/posts/rankings-donut/preview.jpg",
+			"content_html": "This is my on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai. If you nowhere near those places, check out the honorable mentions for some other great spots.",
+			"description": "An on-going list of the best donuts in the world. As a long-time lover of donuts I give you my top 4 must-try donut locations from Chicago, Austin, Tokyo, and Kauai."
 		},
 		{
 			"id": "2016-01-20--welcome",
@@ -22,7 +22,8 @@
 			"date": "2016-01-20T14:22:00-09:00",
 			"tags": "general",
 			"image": null,
-			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!)."
+			"content_html": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).",
+			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!). <a href='javascript://'>...</a>"
 		}
 	]
 }

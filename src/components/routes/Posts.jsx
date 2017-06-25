@@ -22,11 +22,11 @@ class Posts extends React.Component {
 			for(var i = 0; i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];
 				var dt = item.date.substr(0, item.date.indexOf('T'));
-				console.log(dt);
-				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image}>{item.description}</PostSnippet>);
+				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image} body={item.content_html} />);
 				posts.push(out);
 			}
 		}
+
 		return (<Page title='Posts' coverPhoto='posts' blankNav={true}>
 				<Cover>
 					<div className='container'>
@@ -35,7 +35,6 @@ class Posts extends React.Component {
 								<div className='center-block'>
 									<div className='shark-fin profile pull-left'></div>
 									<h1>Blog Posts</h1>
-									<h4>Welcome!</h4>
 								</div>
 							</div>
 						</div>
@@ -46,13 +45,9 @@ class Posts extends React.Component {
 				<Body>
 					<div className='posts'>
 						<div className='row'>
-							<div className='col-md-6 col-xs-12'>
+							<div className='col-md-8 col-xs-12 col-md-offset-2'>
 								<h1>Posts</h1>
 								{posts}
-							</div>
-							<div className='col-md-5 col-md-offset-1 col-xs-12'>
-								<br /><br />
-								<script async src="https://static.medium.com/embed.js"></script><a className="m-profile" href="https://medium.com/@sharkmandan">sharkmandan on Medium</a>
 							</div>
 						</div>
 					</div>
