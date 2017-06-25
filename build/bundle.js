@@ -25466,7 +25466,6 @@
 				});
 
 				console.log('...');
-				var textClass = "col-xs-12";
 				var img = null;
 				if (this.props.image) {
 					var path = this.props.image;
@@ -25476,10 +25475,9 @@
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
-							_react2['default'].createElement('div', { className: 'post-bg', style: { backgroundImage: path } })
+							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: path } })
 						)
 					);
-					textClass = "col-xs-8";
 				}
 				console.log(img);
 
@@ -25492,7 +25490,7 @@
 						{ className: 'row' },
 						_react2['default'].createElement(
 							'div',
-							{ className: textClass },
+							{ className: 'col-xs-12' },
 							_react2['default'].createElement(
 								'h2',
 								null,
@@ -25510,7 +25508,7 @@
 						{ className: 'row' },
 						_react2['default'].createElement(
 							'div',
-							{ className: textClass },
+							{ className: 'col-xs-12' },
 							body
 						)
 					)
