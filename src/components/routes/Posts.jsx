@@ -21,7 +21,7 @@ class Posts extends React.Component {
 		});
 	}
 	render() {
-		var posts = <div>loading...</div>;
+		var posts = <div>loading?</div>;
 		if(this.state && this.state.posts && this.state.posts.length !== 0) {
 			posts = [];
 			for(var i = 0; i < this.state.posts.length; i++) {
