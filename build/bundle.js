@@ -25475,7 +25475,7 @@
 						_react2['default'].createElement(
 							'div',
 							{ className: 'col-xs-12' },
-							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: path } })
+							_react2['default'].createElement('div', { className: 'post-snippet-bg', style: { backgroundImage: url("'" + path + "'") } })
 						)
 					);
 				}
@@ -25599,7 +25599,7 @@
 						console.log(dt);
 						var out = _react2['default'].createElement(
 							_blogPostSnippetJsx2['default'],
-							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.image },
+							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image },
 							item.description
 						);
 						posts.push(out);
