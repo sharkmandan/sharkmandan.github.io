@@ -25560,7 +25560,7 @@
 
 			_get(Object.getPrototypeOf(Posts.prototype), 'constructor', this).call(this, props);
 			var self = this;
-			fetch('posts/map.json').then(function (response) {
+			fetch('feed.json').then(function (response) {
 				return response.json();
 			}).then(function (obj) {
 				self.setState({ posts: obj.posts });
@@ -25579,9 +25579,10 @@
 					posts = [];
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
+						var dt = item.date.substr(0, item.date.indexOf('T'));
 						var out = _react2['default'].createElement(
 							_blogPostSnippetJsx2['default'],
-							{ title: item.title, formattedDate: item.date, tags: item.tags, id: item.slug },
+							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.slug },
 							item.description
 						);
 						posts.push(out);
