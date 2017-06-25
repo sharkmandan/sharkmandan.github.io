@@ -1,5 +1,3 @@
-# Donut Power Rankings: The Best Donuts in the World
-
 ## Introduction
 This is my on-going list of the best donuts in the world. What I'm looking for in a great donut: a warm moist cake, with a firm hard outer crunch when biting into it. The icing and toppings should complement the donut, not be the star of the show. No cream or fruit filling (that's for pastries). A well cooked plain donut can beat a regular donut with a bunch of fancy cereal or candy toppings. Given these criteria a made-to-order restaurant donut has a huge advantage over local pink-box donut store. And it should. If you've never had a made to order donut, it will almost certainly change your perspective on what is a great donut.
 

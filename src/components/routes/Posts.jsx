@@ -46,7 +46,6 @@ class Posts extends React.Component {
 					<div className='posts'>
 						<div className='row'>
 							<div className='col-md-8 col-xs-12 col-md-offset-2'>
-								<h1>Posts</h1>
 								{posts}
 							</div>
 						</div>
