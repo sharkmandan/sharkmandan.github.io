@@ -22,7 +22,8 @@ class Posts extends React.Component {
 			for(var i = 0; i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];
 				var dt = item.date.substr(0, item.date.indexOf('T'));
-				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.slug}>{item.description}</PostSnippet>);
+				console.log(dt);
+				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id}>{item.description}</PostSnippet>);
 				posts.push(out);
 			}
 		}

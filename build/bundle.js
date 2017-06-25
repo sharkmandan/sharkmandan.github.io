@@ -25580,9 +25580,10 @@
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
 						var dt = item.date.substr(0, item.date.indexOf('T'));
+						console.log(dt);
 						var out = _react2['default'].createElement(
 							_blogPostSnippetJsx2['default'],
-							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.slug },
+							{ title: item.title, formattedDate: dt, tags: item.tags, id: item.id },
 							item.description
 						);
 						posts.push(out);
