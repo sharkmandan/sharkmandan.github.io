@@ -13,24 +13,26 @@ class PostSnippet extends React.Component {
 			i++;
 		});
 
+		console.log('...');
 		var textClass = "col-xs-12";
 		var img = null;
 		if(this.props.image) {
-			img = <img src={this.props.image} className="post-thumb" style={{float: left}} />
+			img = <img src={this.props.image} className="post-thumb" />
 			textClass = "col-xs-8";
 		}
+		console.log(img);
 		
 		return (
 			<div className='post-snippet'>
 				{img}
 				<div className='row'>
-					<div className='col-xs-12'>
+					<div className={textClass}>
 						<h2>{this.props.title}</h2>
 						<h4>{this.props.formattedDate}</h4>
 					</div>
 				</div>
 				<div className='row'>
-					<div className='col-xs-12'>
+					<div className={textClass}>
 						{body}
 						
 					</div>
