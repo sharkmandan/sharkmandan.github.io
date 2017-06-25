@@ -12,6 +12,8 @@ class Posts extends React.Component {
 		fetch('feed.json').then(function(response) {
 			return response.json();
 		}).then(function(obj) {
+			console.log(obj);
+			console.log(obj.items);
 			self.setState({posts:obj.items});
 		});
 	}
