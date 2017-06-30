@@ -25,7 +25,7 @@ export class Home extends React.Component {
 			for(var i = 0; i < max && i < this.state.posts.length; i++) {
 				var item = this.state.posts[i];
 				var dt = item.date.substr(0, item.date.indexOf('T'));
-				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image} body={item.content_html} />);
+				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image} body={item.content_html} url={item.url} />);
 				posts.push(out);
 			}
 
@@ -33,7 +33,7 @@ export class Home extends React.Component {
 				var item = this.state.posts[i];
 				if(item.id.indexOf('ranking') === -1) continue;
 				var dt = item.date.substr(0, item.date.indexOf('T'));
-				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image} body={item.content_html} />);
+				var out = (<PostSnippet title={item.title} formattedDate={dt} tags={item.tags} id={item.id} image={item.banner_image} body={item.content_html}  />);
 				rankings.push(out);
 			}
 		}

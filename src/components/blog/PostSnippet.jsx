@@ -26,10 +26,13 @@ class PostSnippet extends React.Component {
 			tags = tagArr.join(', ');
 		}
 
-		console.log(body);
+		let url = `#/posts/${this.props.id}`;
+		if(this.props.url && this.props.url.indexOf('medium.com') !== -1) {
+			url = this.props.url;
+		}
 
 		return (
-			<a href={`#/posts/${this.props.id}`} className='post-snippet'>
+			<a href={url} className='post-snippet'>
 				<div className='row post-snippet-title'>
 					<div className='col-xs-12'>
 						<h2>{this.props.title}</h2>
