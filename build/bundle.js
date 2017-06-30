@@ -24991,11 +24991,47 @@
 			_classCallCheck(this, Home);
 
 			_get(Object.getPrototypeOf(Home.prototype), 'constructor', this).call(this, props);
+			var self = this;
+			fetch('feed.json').then(function (response) {
+				return response.json();
+			}).then(function (obj) {
+				self.setState({ posts: obj.items });
+			});
 		}
 
 		_createClass(Home, [{
 			key: 'render',
 			value: function render() {
+				var max = 5;
+				var posts = _react2['default'].createElement(
+					'div',
+					null,
+					'loading...'
+				);
+				var rankings = _react2['default'].createElement(
+					'div',
+					null,
+					'loading...'
+				);
+				if (this.state && this.state.posts && this.state.posts.length !== 0) {
+					posts = [];
+					rankings = [];
+					for (var i = 0; i < max && i < this.state.posts.length; i++) {
+						var item = this.state.posts[i];
+						var dt = item.date.substr(0, item.date.indexOf('T'));
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html, url: item.url });
+						posts.push(out);
+					}
+
+					for (var i = 0; i < max && i < this.state.posts.length; i++) {
+						var item = this.state.posts[i];
+						if (item.id.indexOf('ranking') === -1) continue;
+						var dt = item.date.substr(0, item.date.indexOf('T'));
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html });
+						rankings.push(out);
+					}
+				}
+
 				return _react2['default'].createElement(
 					_pagePageJsx2['default'],
 					{ title: 'sharkmandan', coverPhoto: 'home', ext: '.png', blankNav: true },
@@ -25048,23 +25084,17 @@
 										null,
 										'Posts'
 									),
-									_react2['default'].createElement(
-										_blogPostSnippetJsx2['default'],
-										{ title: 'Welcome!', formattedDate: '2016 Jan 20', tags: ['General'], id: '2016-01-20--welcome' },
-										'Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).'
-									)
+									posts
 								),
 								_react2['default'].createElement(
 									'div',
 									{ className: 'col-md-5 col-md-offset-1 col-xs-12' },
-									_react2['default'].createElement('br', null),
-									_react2['default'].createElement('br', null),
-									_react2['default'].createElement('script', { async: true, src: 'https://static.medium.com/embed.js' }),
 									_react2['default'].createElement(
-										'a',
-										{ className: 'm-profile', href: 'https://medium.com/@sharkmandan' },
-										'sharkmandan on Medium'
-									)
+										'h1',
+										null,
+										'Rankings'
+									),
+									rankings
 								)
 							)
 						)
@@ -25497,11 +25527,14 @@
 					tags = tagArr.join(', ');
 				}
 
-				console.log(body);
+				var url = '#/posts/' + this.props.id;
+				if (this.props.url && this.props.url.indexOf('medium.com') !== -1) {
+					url = this.props.url;
+				}
 
 				return _react2['default'].createElement(
 					'a',
-					{ href: '#/posts/' + this.props.id, className: 'post-snippet' },
+					{ href: url, className: 'post-snippet' },
 					_react2['default'].createElement(
 						'div',
 						{ className: 'row post-snippet-title' },
@@ -25530,7 +25563,7 @@
 						),
 						_react2['default'].createElement(
 							'div',
-							{ className: 'col-xs-offset-4 col-xs-4 tags' },
+							{ className: 'col-xs-offset-2 col-xs-6 tags' },
 							_react2['default'].createElement(
 								'h4',
 								null,
@@ -25640,7 +25673,6 @@
 				if (this.state && this.state.content) {
 					content = this.state.content;
 					content = (0, _marked2['default'])(content);
-					console.log(content);
 				}
 
 				return _react2['default'].createElement(
@@ -27063,7 +27095,7 @@
 					for (var i = 0; i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
 						var dt = item.date.substr(0, item.date.indexOf('T'));
-						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html });
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html, url: item.url });
 						posts.push(out);
 					}
 				}

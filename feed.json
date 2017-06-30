@@ -24,6 +24,26 @@
 			"image": null,
 			"content_html": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).",
 			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!). <a href='javascript://'>...</a>"
+		},
+		{
+			"id":"2014-12-01--best-thanksgiving-ever",
+			"url": "https://medium.com/@sharkmandan/best-thanksgiving-ever-bb64cce108fc",
+			"title": "Best Thanksgiving Ever",
+			"date": "2014-12-01T17:22:00-09:00",
+			"tags": "family",
+			"image": null,
+			"content_html": "I had originally started writing this as a sort-of journal regarding the thoughts, feelings and emotions I had at the time. I wanted to write down everything about the ordeal and any details that related to it. If parts of the post seem too detail-oriented, that is likely because it was a memorable detail to me, even if it does not make for a more fluid read. I tried to focus on how I felt and what I was thinking (as much as possible in hindsight), even if those emotions did not make sense. Hopefully it does not detract from the story too much.",
+			"description": "The story of my brothers sudden illness in China. The struggles we had, medically, culturally, and emotionally."
+		},
+		{
+			"id":"2014-08-10--the-best-medicine",
+			"url": "https://medium.com/@sharkmandan/the-best-medicine-336e5d291fd9",
+			"title": "The Best Medicine",
+			"date": "2014-08-10T13:22:00-09:00",
+			"tags": "family",
+			"image": null,
+			"content_html": "Remembering Aunt Millie, her pranks, laughter and the impact she will continue to have.",
+			"description": "Remembering Aunt Millie, her pranks, laughter and the impact she will continue to have."
 		}
 	]
 }
