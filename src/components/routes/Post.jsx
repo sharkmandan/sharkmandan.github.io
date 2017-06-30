@@ -29,7 +29,6 @@ class Post extends React.Component {
 		if(this.state && this.state.content) {
 			content = this.state.content;
 			content = marked(content);
-			console.log(content);
 		}
 
 		return (<Page title={title} coverPhoto={`../../../src/images/posts/${this.props.params.id}/preview`} blankNav={true}>

@@ -40,7 +40,7 @@ class PostSnippet extends React.Component {
 					<div className='col-xs-4'>
 						<h4>{this.props.formattedDate}</h4>
 					</div>
-					<div className='col-xs-offset-4 col-xs-4 tags'>
+					<div className='col-xs-offset-2 col-xs-6 tags'>
 						<h4><span className='glyphicon glyphicon-tags' /> {tags}</h4>
 					</div>
 				</div>
