@@ -1,5 +1,6 @@
 import React from 'react';
 import marked from 'marked';
+import 'whatwg-fetch';
 import Page from '../page/Page.jsx';
 import Cover from '../page/Cover.jsx';
 import BaselineNav from '../page/BaselineNav.jsx';

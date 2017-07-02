@@ -6,7 +6,8 @@
   "dependencies": {
     "marked": "^0.3.6",
     "react": "^0.13.3",
-    "webpack": "^1.11.0"
+    "webpack": "^1.11.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
