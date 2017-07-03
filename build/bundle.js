@@ -25728,7 +25728,7 @@
 					for (var i = 0; i < max && i < this.state.posts.length; i++) {
 						var item = this.state.posts[i];
 						var dt = item.date.substr(0, item.date.indexOf('T'));
-						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html, url: item.url });
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { key: item.id, title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html, url: item.url });
 						posts.push(out);
 					}
 
@@ -25736,7 +25736,7 @@
 						var item = this.state.posts[i];
 						if (item.id.indexOf('ranking') === -1) continue;
 						var dt = item.date.substr(0, item.date.indexOf('T'));
-						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html });
+						var out = _react2['default'].createElement(_blogPostSnippetJsx2['default'], { key: 'rankings-' + item.id, title: item.title, formattedDate: dt, tags: item.tags, id: item.id, image: item.banner_image, body: item.content_html });
 						rankings.push(out);
 					}
 				}
