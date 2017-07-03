@@ -6,12 +6,9 @@ let Page = React.createClass({
 		if(nav.length === 0) { return null; }
 		
 		let size = (100 / nav.length) + '%';
-		console.log(size);
-		console.log(nav);
 		
 		var content = [];
 		nav.forEach((item, i) => {
-			console.log('NAVITEM', item);
 			content.push(<a href={item.url || 'javascript://'} className='baseline-link' style={{width:size}} key={i}><div>{item.text}</div></a>);
 		});
 		

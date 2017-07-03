@@ -12,7 +12,7 @@ class Post extends React.Component {
 	constructor(props) {
 		super(props);
 		var self = this;
-		let id = props.params.id;
+		let id = props.match.params.id;
 		fetch(`/posts/${id}.json`).then(function(response) {
 			return response.json();
 		}).then(function(obj) {
@@ -26,13 +26,14 @@ class Post extends React.Component {
 	}
 	render() {
 		var content = <div>. . .</div>;
+		const id = this.props.match.params.id;
 		let title = this.state && this.state.meta ? this.state.meta.title : '. . .';
 		if(this.state && this.state.content) {
 			content = this.state.content;
 			content = marked(content);
 		}
 
-		return (<Page title={title} coverPhoto={`../../../src/images/posts/${this.props.params.id}/preview`} blankNav={true}>
+		return (<Page title={title} coverPhoto={`../../../src/images/posts/${id}/preview`} blankNav={true}>
 				<Cover>
 					<div className='container'>
 						<div className='row'>
