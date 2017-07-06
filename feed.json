@@ -5,8 +5,19 @@
 	"feed_url": "https://sharkmandan.com/feed.json",
 	"items":[
 		{
+			"id": "2017-07-05--welcome-back",
+			"url": "https://sharkmandan.com/#/posts/2017-07-05--welcome-back",
+			"title": "Welcome Back!",
+			"date": "2017-07-05T19:35:00-09:00",
+			"tags": "general",
+			"image": "/src/images/posts/2017-07-05--welcome-back/preview.jpg",
+			"banner_image": "/src/images/posts/2017-07-05--welcome-back/preview.jpg",
+			"content_html": "As you may have noticed, it was nearly 18 months between the first post and the second one. Turns out _more coming soon_ was a lie. Who knew a young baby and a non-existent blog engine (if you can even call it that) would lead to no posts, but it did. Along the same lines, working 8-10 hour days writing technology doesn't leave me very motivated to experiment and write about it. I seem to come home looking to exercise a different part of my brain.",
+			"description": "As you may have noticed, it was nearly 18 months between the first post and the second one. Turns out _more coming soon_ was a lie. Who knew a young baby and a non-existent blog engine (if you can even call it that) would lead to no posts, but it did. Along the same lines, working 8-10 hour days writing technology doesn't leave me very motivated to experiment and write about it. I seem to come home looking to exercise a different part of my brain."
+		},
+		{
 			"id": "rankings-donut",
-			"url": "https://sharkmandan.com/#posts/rankings-donut",
+			"url": "https://sharkmandan.com/#/posts/rankings-donut",
 			"title": "Donut Power Rankings: The Best Donuts in the World",
 			"date": "2017-06-21T22:17:00-08:00",
 			"tags": "food,donuts,ranking",
@@ -17,11 +28,12 @@
 		},
 		{
 			"id": "2016-01-20--welcome",
-			"url": "https://sharkmandan.com/#posts/2016-01-20--welcome",
+			"url": "https://sharkmandan.com/#/posts/2016-01-20--welcome",
 			"title": "Welcome!",
 			"date": "2016-01-20T14:22:00-09:00",
 			"tags": "general",
-			"image": null,
+			"image": "/build/img/home.png",
+			"banner_image": "/build/img/home.png",
 			"content_html": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!).",
 			"description": "Welcome to the new and improved sharkmandan.com! Nearly all the blog-posts entered on this site will be programming related. I may still cross-post a few things to medium, or add non-programming posts to both medium and sharkmandan.com. For the historical medium posts, see the section to the right/bottom (responsive woo!). <a href='javascript://'>...</a>"
 		},
